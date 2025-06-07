@@ -1,0 +1,20 @@
+{
+  "name": "ccac",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./css/styles.css -o ./css/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8"
+  },
+  "description": "",
+  "dependencies": {
+    "swiper": "^11.2.8"
+  }
+}
