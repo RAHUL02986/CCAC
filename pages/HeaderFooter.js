@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div id="mobile-menu" class="xl:hidden fixed inset-0 right-[20%] bg-white z-40 transform -translate-x-full  transition-transform duration-300 ease-in-out overflow-y-auto">
                     <div class="pt-4 pb-2">
                         <div class="flex justify-end px-4 mb-4">
-                       
+                        
                             <button id="close-menu" aria-label="Close menu" class="focus:outline-none focus:ring-2 focus:ring-blue-500">
                                 <svg class="w-8 h-8 text-[#246788]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -174,7 +174,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         <div class="border-b border-gray-400">
                         
-
                             <button onclick="toggleSubmenu('certification', this)" class="group px-4 w-full flex items-center justify-between text-left font-semibold py-3 hover:bg-[#EE9B24] hover:text-white transition">
                                 <span>Certification</span>
                                 <svg class="w-5 h-5 text-gray-500 group-hover:text-white transition transform group-[.active]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -286,9 +285,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             <li><a href="#" class="hover:text-[#77DDFE] hover:underline text-lg font-medium">Training</a>
                             </li>
                             <li><a href="#" class="hover:text-[#77DDFE] hover:underline text-lg font-medium">Animal used in
-                                        Science</a></li>
+                                    Science</a></li>
                             <li><a href="policies.html" class="hover:text-[#77DDFE] hover:underline text-lg font-medium">Guidelines &
-                                        Policies</a></li>
+                                    Policies</a></li>
                         </ul>
                     </div>
                     <div class="space-y-7 text-white">
@@ -342,12 +341,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const closeMenu = document.getElementById('close-menu');
+    const body = document.body; // Get the body element
 
     // Toggle mobile menu visibility and transform
     if (menuToggle && mobileMenu) {
         menuToggle.addEventListener('click', () => {
             mobileMenu.classList.remove('-translate-x-full');
             mobileMenu.classList.add('translate-x-0');
+            body.classList.add('overflow-hidden'); // Prevent body scroll
         });
     }
 
@@ -356,12 +357,20 @@ document.addEventListener('DOMContentLoaded', () => {
         closeMenu.addEventListener('click', () => {
             mobileMenu.classList.remove('translate-x-0');
             mobileMenu.classList.add('-translate-x-full');
+            body.classList.remove('overflow-hidden'); // Re-enable body scroll
+            // Optionally, close all submenus when the main mobile menu is closed
+            // This is good practice for a clean state when reopening the menu
+            document.querySelectorAll('#mobile-menu .space-y-1:not(.hidden)').forEach(submenu => {
+                submenu.classList.add('hidden');
+                submenu.previousElementSibling.classList.remove('active'); // Remove active class from button
+            });
         });
     }
 
-    // Global function for toggling submenus
+    // Global function for toggling submenus - MODIFIED FOR MULTIPLE OPENS
     window.toggleSubmenu = function (id, triggerButton) {
         const submenu = document.getElementById(`submenu-${id}`);
+
         if (submenu) {
             submenu.classList.toggle('hidden');
             // Toggle 'active' class on the button itself to rotate the SVG icon
