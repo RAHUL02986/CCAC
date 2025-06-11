@@ -1,6 +1,6 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 * {
     font-family: 'Poppins';
@@ -13,12 +13,12 @@
     padding: 0px 10px;
 }
 
-/* :root { */
-    /* --color-primary: #3b82f6; */
-    /* Tailwind blue-500 */
-    /* --color-secondary: #6b7280; */
-    /* Tailwind gray-500 */
-/* } */
+/* :root { 
+    --color-primary: #3b82f6; 
+    --Tailwind: black; */
+/* --color-secondary: #6b7280;
+     Tailwind gray-500 */
+/* }  */
 
 /* .primary {
     background-color: var(--color-primary);
@@ -27,21 +27,18 @@
 } */
 
 
-/* :root { */
-      /* --color-primary: #246788;
+/* :root { 
+      --color-primary: #246788;
       --color-secondary: #EE9B24;
       --color-black: #000000;
       --color-white: #FFFFFF;
-      --color-gray: #4F4F4F; */
-/* } */
-/* 
-
-h1 {
-    font-size: 64px;
+      --color-gray: #4F4F4F;
 } */
 
+
+
 h2 {
-    font-size: 45px;
+    /* font-size: 45px; */
     font-weight: 700;
     line-height: 100%;
     /* color: #000000; */
@@ -103,6 +100,25 @@ p {
     transition: background-color 0.3s ease;
 }
 
+/* For screens 1024px and below */
+@media (max-width: 1024px) {
+    .swiper-pagination-bullet {
+        width: 12px !important;
+        height: 12px !important;
+        margin: 0 4px !important;
+    }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .swiper-pagination-bullet {
+        width: 8px !important;
+        height: 8px !important;
+        margin: 0 3px !important;
+    }
+}
+
+
 .swiper-pagination-bullet-active {
     background: #123d5a;
     opacity: 1;
@@ -113,10 +129,40 @@ p {
     padding-bottom: 10px;
 }
 
+@media (max-width: 1024px) {
+    .swiper-pagination {
+        bottom: 80px !important;
+        padding-bottom: 10px;
+    }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .swiper-pagination {
+        bottom: 22px !important;
+        padding-bottom: 10px;
+    }
+}
+
 
 .text-overlay {
     /* position: absolute; */
     /* top: 0%;
     left: 0%; */
     z-index: 10;
+}
+
+
+
+details[open]>summary {
+    background-color: #246788 !important;
+    color: white !important;
+}
+
+.white{
+    background-color: white;
+}
+
+ button{
+    cursor: pointer !important;
 }

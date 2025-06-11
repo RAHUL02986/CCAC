@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News</title>
+    <title>News&media</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- <link href="../css/output.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="/css/style.css">
@@ -17,29 +17,29 @@
 </head>
 
 <body>
-
     <section>
         <div id="header-placeholder"></div>
     </section>
     <section>
-        <div class="bg-[url('/Public/Images/News&media.jpg')] flex items-center h-[358px] bg-center">
+        <div class="bg-[url('/Public/Images/News&media.jpg')] bg-no-repeat bg-cover bg-center flex items-center h-[358px] bg-center">
             <div class="container">
                 <div class="lg:flex justify-between ">
-                    <div class="lg:h-[358px] flex justify-center lg:items-center">
+                    <div class="lg:h-[358px] flex z-9 justify-center lg:items-center">
                         <div>
-                            <h1 class="text-2xl text-primary text-center text-white lg:text-left lg:text-6xl font-semibold">News and
-                                Media
-                            </h1>
+                             <h1 class="text-3xl text-center text-white lg:text-left md:text-5xl lg:text-6xl font-semibold  ">
+                                     News and
+                                Media</h1>
                             <p
-                                class=" text-center text-lg py-5 text-white lg:text-lg lg:text-left leading-[24px] font-medium">
+                                class="text-center text-lg py-5 text-white lg:text-left leading-[24px] font-medium">
                                 Stay updated with the latest news and announcements from CCAC.
                             </p>
                         </div>
                     </div>
                     <div class="flex text-white justify-center lg:items-end">
                         <ul class="flex py-4">
-                            <li class="border-r px-2 text-lg"><a href="#">Home</a></li>
-                            <li class="px-3 text-lg"><a href="#">News and Media</a></li>
+                             <div class="mr-2 "><img src="/Public//Images/home.svg" alt="" w-full></div>
+                            <li class="border-r px-2 text-lg"><a href="index.html">Home</a></li>
+                            <li class="px-3 text-lg"><a href="News&media.html">News and Media</a></li>
                         </ul>
                     </div>
                 </div>
@@ -51,78 +51,89 @@
         <div class="container">
             <div class="lg:flex justify-between pt-13">
                 <div>
-                   <ul class="border rounded-lg w-full overflow-hidden">
-    <li class="border-b border-gray-200">
-        <a href="#"
-            class="group flex items-center justify-between w-full py-4 px-5 text-lg font-medium text-gray-800 hover:bg-[#F0942F] hover:text-white transition-colors duration-200">
-            <span>About the CCAC</span>
-            <svg class="w-4 h-4 text-gray-500 group-hover:text-white transition-colors duration-200"
-                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M19 9l-7 7-7-7" />
-            </svg>
-        </a>
-    </li>
-    <li class="border-b border-gray-200">
-        <a href="#"
-            class="group flex items-center justify-between w-full py-4 px-5 text-lg font-medium text-gray-800 hover:bg-[#F0942F] hover:text-white transition-colors duration-200">
-            <span>Recognition Awards</span>
-            <svg class="w-4 h-4 text-gray-500 group-hover:text-white transition-colors duration-200"
-                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M19 9l-7 7-7-7" />
-            </svg>
-        </a>
-    </li>
-    <li class="border-b border-gray-200">
-        <a href="#"
-            class="group flex items-center justify-between w-full py-4 px-5 text-lg font-medium text-gray-800 hover:bg-[#F0942F] hover:text-white transition-colors duration-200">
-            <span>Reports and Publications</span>
-            <svg class="w-4 h-4 text-gray-500 group-hover:text-white transition-colors duration-200"
-                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M19 9l-7 7-7-7" />
-            </svg>
-        </a>
-    </li>
-    <li class=" border-b border-gray-200">
-        <a href="#"
-            class="group flex items-center justify-between w-full py-4 px-5 text-lg font-medium hover:bg-[#F0942F] transition-colors duration-200">
-            <span>News and Media</span>
-            <svg class="w-4 h-4  group-hover:text-gray-100 transition-colors duration-200"
-                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M19 9l-7 7-7-7" />
-            </svg>
-        </a>
-    </li>
-    <li class="border-b border-gray-200">
-        <a href="#"
-            class="group flex items-center justify-between w-full py-4 px-5 text-lg font-medium text-gray-800 hover:bg-[#F0942F] hover:text-white transition-colors duration-200">
-            <span>Careers</span>
-            <svg class="w-4 h-4 text-gray-500 group-hover:text-white transition-colors duration-200"
-                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M19 9l-7 7-7-7" />
-            </svg>
-        </a>
-    </li>
-    <li class="rounded-b-lg">
-        <a href="Contact.html"
-            class="group flex items-center justify-between w-full py-4 px-5 text-lg font-medium text-gray-800 hover:bg-[#F0942F] hover:text-white transition-colors duration-200">
-            <span>Contact Us</span>
-            <svg class="w-4 h-4 text-gray-500 group-hover:text-white transition-colors duration-200"
-                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M19 9l-7 7-7-7" />
-            </svg>
-        </a>
-    </li>
-</ul>
+                    <ul class="border border-gray-200  w-full overflow-hidden">
+                        <li class="border-b border-gray-200">
+                            <a href="index.html"
+                                class="group flex items-center justify-between w-full py-4 px-5 text-lg font-medium text-gray-800 hover:bg-[#F0942F] hover:text-white transition-colors duration-200">
+                                <span>About the CCAC</span>
+                                <svg class="w-4 h-4 text-gray-500 group-hover:text-white transition-colors duration-200"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="border-b border-gray-200">
+                            <a href=""
+                                class="group flex items-center justify-between w-full py-4 px-5 text-lg font-medium text-gray-800 hover:bg-[#F0942F] hover:text-white transition-colors duration-200">
+                                <span>Recognition Awards</span>
+                                <svg class="w-4 h-4 text-gray-500 group-hover:text-white transition-colors duration-200"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="border-b border-gray-200">
+                            <a href="policies.html"
+                                class="group flex items-center justify-between w-full py-4 px-5 text-lg font-medium text-gray-800 hover:bg-[#F0942F] hover:text-white transition-colors duration-200">
+                                <span>Reports and Publications</span>
+                                <svg class="w-4 h-4 text-gray-500 group-hover:text-white transition-colors duration-200"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="bg-[#EE9B24] text-white border-b border-gray-200">
+                            <a href="News&media.html"
+                                class="group flex items-center justify-between w-full py-4 px-5 text-lg font-medium hover:bg-[#F0942F] transition-colors duration-200">
+                                <span>News and Media</span>
+                                <svg class="w-4 h-4  group-hover:text-gray-100 transition-colors duration-200"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="border-b border-gray-200">
+                            <a href=""
+                                class="group flex items-center justify-between w-full py-4 px-5 text-lg font-medium text-gray-800 hover:bg-[#F0942F] hover:text-white transition-colors duration-200">
+                                <span>Careers</span>
+                                <svg class="w-4 h-4 text-gray-500 group-hover:text-white transition-colors duration-200"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                        </li>
+                         <li class="rounded-b-lg">
+                            <a href="certification.html"
+                                class="group flex items-center justify-between w-full py-4 px-5 text-lg font-medium text-gray-800 hover:bg-[#F0942F] hover:text-white transition-colors duration-200">
+                                <span>Certification</span>
+                                <svg class="w-4 h-4 text-gray-500 group-hover:text-white transition-colors duration-200"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="rounded-b-lg">
+                            <a href="contact.html"
+                                class="group flex items-center justify-between w-full py-4 px-5 text-lg font-medium text-gray-800 hover:bg-[#F0942F] hover:text-white transition-colors duration-200">
+                                <span>Contact Us</span>
+                                <svg class="w-4 h-4 text-gray-500 group-hover:text-white transition-colors duration-200"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-5 py-4 lg:py-0">
-                    <div class="bg-white rounded-lg lg:w-[362px]  shadow-md py-1 px-2">
+                    <div class="bg-white rounded-lg lg:w-[362px]  shadow-[0px_0px_25px_-10px_#24678826] py-1 px-2">
                         <div class="relative">
                             <img src="/Public/Images/stars.jpg" alt="Stars"
                                 class="w-full md:w-100 rounded h-48 object-cover" />
@@ -132,16 +143,16 @@
                             </div>
                         </div>
                         <div class="px-2 py-4">
-                            <h3 class="text-[17px] font-bold mb-2">Ms. Karen Gourlay Receives 2025 Harry
+                            <h3 class="text-[16px] font-medium pt-5 pb-4 lg:font-bold">Ms. Karen Gourlay Receives 2025 Harry
                                 C. Rowsell Lifetime Achievement Award</h3>
-                            <p class=" ">
+                            <p class="text-md lg:text-lg text-[#4F4F4F]">
                                 The Canadian Council on Animal Care (CCAC) is pleased to present this year’s Harry C.
                                 Rowsell Lifetime Achievement Award to Ms. Karen Gourlay.
                             </p>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-lg lg:w-[362px] shadow-md  py-1 px-2">
+                    <div class="bg-white rounded-lg lg:w-[362px] shadow-[0px_0px_25px_-10px_#24678826]  py-1 px-2">
                         <div class="relative">
                             <img src="/Public/Images/stars.jpg" alt="Stars" class="w-full md:w-100 rounded h-48 " />
                             <div
@@ -150,35 +161,35 @@
                             </div>
                         </div>
                         <div class="py-4 px-2">
-                            <h3 class="text-[17px] font-bold mb-2">Mr. Stephen Barber Receives 2025 Gilles Demers Award
+                            <h3 class="text-[16px] font-medium max-w-80 py-3 lg:font-bold">Mr. Stephen Barber Receives 2025 Gilles Demers Award
                                 for Excellence in Animal Care</h3>
-                            <p class=" ">
+                            <p class="text-md lg:text-lg text-[#4F4F4F]">
                                 The Canadian Council on Animal Care (CCAC) is pleased to recognize Mr. Stephen Barber as
                                 this year’s recipient of the Gilles Demers Award for Excellence in Animal Care.
                             </p>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-lg lg:w-[362px] shadow-md  py-1 px-2">
+                    <div class="bg-white rounded-lg lg:w-[362px] shadow-[0px_0px_25px_-10px_#24678826]  py-1 px-2">
                         <div class="relative">
                             <img src="/Public/Images/stars.jpg" alt="Stars"
                                 class="w-full md:w-100 rounded h-48 object-cover" />
                             <div
                                 class="absolute rounded-xs bottom-[-12px] left-4 bg-[#246788] text-white text-sm px-5 py-2 ">
-                                2025/04/30
+                                2025/04/15
                             </div>
                         </div>
                         <div class="px-2 py-4">
-                            <h3 class="text-[17px] max-w-72 font-bold mb-2">Ms. Aleah McCorry Receives 2025 CCAC
+                            <h3 class="text-[17px] max-w-70 font-medium  py-3 lg:font-bold">Ms. Aleah McCorry Receives 2025 CCAC
                                 Emerging Leader Award</h3>
-                            <p class=" ">
+                            <p class="text-md  lg:text-lg text-[#4F4F4F]">
                                 The Canadian Council on Animal Care (CCAC) is pleased to recognize Ms. Aleah McCorry, as
                                 this year’s recipient of the CCAC Emerging Leader Award.
                             </p>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-lg lg:w-[362px] shadow-md  py-1 px-2">
+                    <div class="bg-white rounded-lg lg:w-[362px] shadow-[0px_0px_25px_-10px_#24678826]  py-1 px-2">
                         <div class="relative">
                             <img src="/Public/Images/crock.jpg" alt="Stars" class="w-full md:w-100 rounded h-48 " />
                             <div
@@ -187,16 +198,16 @@
                             </div>
                         </div>
                         <div class="py-4 px-3">
-                            <h3 class="text-[17px] max-w-70 font-bold mb-2">The CCAC Publishes Revised Reptiles
+                            <h3 class="text-[17px] max-w-75 font-medium  py-3 lg:font-bold">The CCAC Publishes Revised Reptiles
                                 Guidelines</h3>
-                            <p class=" ">
+                            <p class=" text-md lg:text-lg text-[#4F4F4F]">
                                 The Canadian Council on Animal Care (CCAC) has published the revised CCAC guidelines:
                                 Reptiles document.
                             </p>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-lg lg:w-[362px] shadow-md  py-1 px-2">
+                    <div class="bg-white rounded-lg lg:w-[362px] shadow-[0px_0px_25px_-10px_#24678826]  py-1 px-2">
                         <div class="relative">
                             <img src="/Public/Images/clock.jpg" alt="Stars"
                                 class="w-full md:w-100 rounded h-48 object-cover" />
@@ -206,36 +217,18 @@
                             </div>
                         </div>
                         <div class="px-2 py-4">
-                            <h3 class="text-[17px] max-w-75 font-bold mb-2">Call for Subcommittee Members for Rabbit
+                            <h3 class="text-[17px] max-w-75 font-medium  py-3 lg:font-bold ">Call for Subcommittee Members for Rabbit
                                 Guidelines</h3>
-                            <p class=" ">
+                            <p class="text-md lg:text-lg text-[#4F4F4F]">
                                 The Canadian Council on Animal Care (CCAC) is forming a new subcommittee of volunteer
                                 experts to revise its rabbit guidelines.
                             </p>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-lg lg:w-[362px] shadow-md  py-1 px-2">
+                    <div class="bg-white rounded-lg lg:w-[362px] shadow-[0px_0px_25px_-10px_#24678826] py-1 px-2">
                         <div class="relative">
-                            <img src="/Public/Images/clock.jpg" alt="Stars" class="w-full md:w-100 rounded h-48 " />
-                            <div
-                                class="absolute rounded-xs bottom-[-12px] left-4 bg-[#246788] text-white text-sm px-5 py-2 ">
-                                2025/04/30
-                            </div>
-                        </div>
-                        <div class="py-4 px-3">
-                            <h3 class="text-[16px] max-w-70 font-bold mb-2">Call for Subcommittee Members for Rabbit
-                                Guidelines</h3>
-                            <p class=" ">
-                                The Canadian Council on Animal Care (CCAC) is forming a new subcommittee of volunteer
-                                experts to revise its rabbit guidelines.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-lg lg:w-[362px] shadow-md  py-1 px-2">
-                        <div class="relative">
-                            <img src="/Public/Images/stars.jpg" alt="Stars"
+                            <img src="/Public/Images/clock.jpg" alt="Stars"
                                 class="w-full md:w-100 rounded h-48 object-cover" />
                             <div
                                 class="absolute rounded-xs bottom-[-12px] left-4 bg-[#246788] text-white text-sm px-5 py-2 ">
@@ -243,27 +236,46 @@
                             </div>
                         </div>
                         <div class="px-2 py-4">
-                            <h3 class="text-[17px] max-w-70 font-bold mb-2">Last Call to Take Advantage of The Early
+                            <h3 class="text-[17px] max-w-75 font-medium py-3 lg:font-bold">Call for Subcommittee Members for Rabbit
+                                Guidelines</h3>
+                            <p class="text-md lg:text-lg text-[#4F4F4F]">
+                                The Canadian Council on Animal Care (CCAC) is forming a new subcommittee of volunteer
+                                experts to revise its rabbit guidelines.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg lg:w-[362px] shadow-[0px_0px_25px_-10px_#24678826]  py-1 px-2">
+                        <div class="relative">
+                            <img src="/Public/Images/stars.jpg" alt="Stars"
+                                class="w-full md:w-100 rounded h-48 object-cover" />
+                            <div
+                                class="absolute rounded-xs bottom-[-12px] left-4 bg-[#246788] text-white text-sm px-5 py-2 ">
+                                2025/04/08
+                            </div>
+                        </div>
+                        <div class="px-2 py-4">
+                            <h3 class="text-[17px] max-w-68 font-medium py-3 lg:font-bold mb-2">Last Call to Take Advantage of The Early
                                 Bird Rate!</h3>
-                            <p class=" ">
+                            <p class="text-md lg:text-lg text-[#4F4F4F] ">
                                 There is only one week left to take advantage of the early-bird rate for the CCAC
                                 National Workshop 2025!
                             </p>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-lg lg:w-[362px] shadow-md  py-1 px-2">
+                    <div class="bg-white rounded-lg lg:w-[362px] shadow-[0px_0px_25px_-10px_#24678826]  py-1 px-2">
                         <div class="relative">
                             <img src="/Public/Images/mouse.jpg" alt="Stars" class="w-full md:w-100 rounded h-48 " />
                             <div
                                 class="absolute rounded-xs bottom-[-12px] left-4 bg-[#246788] text-white text-sm px-5 py-2 ">
-                                2025/04/30
+                                2025/04/01
                             </div>
                         </div>
                         <div class="py-4 px-3">
-                            <h3 class="text-[17px] max-w-70 font-bold mb-2">Thank you for making A Difference to the
+                            <h3 class="text-[17px] max-w-60 font-medium py-2 lg:font-bold mb-2">Thank you for making A Difference to the
                                 CCAC!</h3>
-                            <p class=" ">
+                            <p class="text-md lg:text-lg text-[#4F4F4F]">
                                 Happy National Volunteer Month! Thank you, CCAC’s volunteers and stakeholders, for all
                                 of the time, expertise, and knowledge you have shared with us over the years.
                             </p>
@@ -271,13 +283,13 @@
                     </div>
                 </div>
 
-                <div class=" bg-white rounded-md  shadow-lg h-full">
+                <!-- <div class=" bg-white rounded-md  shadow-lg h-full">
                     <div class="bg-[#EE9B24] text-white gap-2 flex justify-center items-center px-10 py-2">
                         <img src="/Public/Images/date.svg" alt="">
                         <span class="">Archives</span>
                     </div>
 
-                    <ul class="divide-y border-t-0 rounded-b-md border-2 border-[#246788] divide-gray-200">
+                    <ul class="divide-y border-t-0 border-2 border-[#246788] divide-gray-200">
                         <li
                             class="flex items-cente r space-x-2 px-4 py-3 hover:bg-gray-100 cursor-pointer border-b-2  border-[#246788] text-sky-800">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-sky-800" fill="none"
@@ -324,7 +336,90 @@
                             <span>2021</span>
                         </li>
                     </ul>
+                </div> -->
+
+            <div class=" lg:w-[168px]">
+                <!-- Header -->
+                <div class="bg-[#F4A019] text-white flex items-center gap-2 px-4 py-3">
+                    <img src="/Public/Images/archives.svg" alt="icon" class="w-5 h-5" />
+                    <span>Archives</span>
                 </div>
+
+                <!-- Accordion: 2025 -->
+                <details class="border-t-0 border-[#157492]  border-2">
+                    <summary
+                        class="cursor-pointer flex items-center gap-2 bg-transparent text-[#157492] px-4 py-2 transition-colors duration-300">
+                        <img src="/Public/Images/calender.svg" alt="calendar" class="w-4 h-4" />
+                        <span class="text-sx font-semibold">2025</span>
+                    </summary>
+                    <div class="flex flex-col text-[#246788]">
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">April 2025 (8)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">March 2025 (3)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">February 2025 (2)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">January 2025 (5)</a>
+                    </div>
+                </details>
+
+                <!-- Repeat for other years -->
+                <details class="border-t-0 border-[#157492] border-2">
+                    <summary
+                        class="cursor-pointer flex items-center gap-2 bg-transparent text-[#157492] px-4 py-2 transition-colors duration-300">
+                        <img src="/Public/Images/calender.svg" alt="calendar" class="w-4 h-4" />
+                        <span class="text-sx font-semibold">2024</span>
+                    </summary>
+                    <div class="flex flex-col text-[#246788]">
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">April 2024 (8)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">March 2024 (3)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">February 2024 (2)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">January 2024 (5)</a>
+                    </div>
+                </details>
+
+                <details class="border-t-0 border-[#157492] border-2">
+                    <summary
+                        class="cursor-pointer flex items-center gap-2 bg-transparent text-[#157492] px-4 py-2 transition-colors duration-300">
+                        <img src="/Public/Images/calender.svg" alt="calendar" class="w-4 h-4" />
+                        <span class="text-sx font-semibold">2023</span>
+                    </summary>
+                    <div class="flex flex-col text-[#246788]">
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">April 2024 (8)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">March 2024 (3)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">February 2024 (2)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">January 2024 (5)</a>
+                    </div>
+                </details>
+                <details class="border-t-0 border-[#157492] border-2">
+                    <summary
+                        class="cursor-pointer flex items-center gap-2 bg-transparent text-[#157492] px-4 py-2 transition-colors duration-300">
+                        <img src="/Public/Images/calender.svg" alt="calendar" class="w-4 h-4" />
+                        <span class="text-sx font-semibold">2022</span>
+                    </summary>
+                    <div class="flex flex-col text-[#246788]">
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">April 2024 (8)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">March 2024 (3)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">February 2024 (2)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">January 2024 (5)</a>
+                    </div>
+                </details>
+
+                <details class="border-t-0 border-[#157492] border-2">
+                    <summary
+                        class="cursor-pointer flex items-center gap-2 bg-transparent text-[#157492] px-4 py-2 transition-colors duration-300">
+                        <img src="/Public/Images/calender.svg" alt="calendar" class="w-4 h-4" />
+                        <span class="text-sx font-semibold">2021</span>
+                    </summary>
+                    <div class="flex flex-col text-[#246788]">
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">April 2024 (8)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">March 2024 (3)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">February 2024 (2)</a>
+                        <a href="#" class="p-2.5 border-t border-[#157492] text-xs">January 2024 (5)</a>
+                    </div>
+                </details>
+                
+
+                <!-- Repeat same structure for 2023, 2022, 2021 -->
+
+            </div>
 
             </div>
 
@@ -344,7 +439,7 @@
                     <button class="w-8 h-8 border text-gray-400 border-gray-300 rounded">6</button>
                     <span class="w-8 h-8 flex items-center justify-center text-gray-400">...</span>
 
-                    <!-- Right Arrow -->
+                  
                     <button
                         class="w-8 h-8 flex items-center justify-center border text-gray-400 border-gray-300 rounded">
                         &gt;
